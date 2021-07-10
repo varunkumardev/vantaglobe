@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Globe</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        #vanta-canvas{
+
+        #vanta-canvas {
             width: 100%;
             height: 100vh;
         }
@@ -25,31 +26,18 @@
     <script>
         VANTA.GLOBE({
             el: "#vanta-canvas",
-            mouseControls: true,
+            mouseControls: false,
             touchControls: true,
             gyroControls: false,
             minHeight: 200.00,
             minWidth: 200.00,
             scale: 1.00,
-            scaleMobile: 1.00
+            scaleMobile: 1.00,
+            color: 0x3f6eff,
+            backgroundColor: 0x121113,
         })
     </script>
 
 </body>
 
 </html>
-
-<!-- <script src="three.r119.min.js"></script>
-<script src="vanta.globe.min.js"></script>
-<script>
-VANTA.GLOBE({
-  el: "#your-element-selector",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00
-})
-</script> -->
