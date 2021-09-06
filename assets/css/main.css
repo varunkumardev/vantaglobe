@@ -1,0 +1,594 @@
+body {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  background-color: #000000;
+}
+
+/* vanta globe */
+#vanta-canvas {
+  width: 100%;
+  height: 100vh;
+}
+
+/* logo */
+.img-responsive {
+  margin-top: 20px;
+  opacity: 0.89;
+}
+
+/* ==================================== sidebar ===================================== */
+.vector {
+  padding-right: 0;
+  margin-top: 10px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.vector label {
+  display: flex;
+  flex-direction: column;
+  width: 44px;
+  cursor: pointer;
+  float: right;
+  padding-top: 21px;
+  margin-right: 10px;
+}
+
+.vector label span {
+  background: #fff;
+  border-radius: 5px;
+  height: 5px;
+  margin: 3px 0;
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+span:nth-of-type(1) {
+  width: 50%;
+}
+
+span:nth-of-type(2) {
+  width: 100%;
+}
+
+span:nth-of-type(3) {
+  width: 70%;
+}
+
+.vector input[type="checkbox"] {
+  display: none;
+}
+
+.vector input[type="checkbox"]:hover ~ span:nth-of-type(1) {
+  width: 70%;
+}
+
+.vector input[type="checkbox"]:hover ~ span:nth-of-type(2) {
+  width: 50%;
+}
+
+.vector input[type="checkbox"]:hover ~ span:nth-of-type(3) {
+  width: 100%;
+}
+
+/* Menu */
+.menu_text {
+  width: 115px;
+  height: 48px;
+  float: right;
+  font-size: 38px;
+  line-height: 72px;
+}
+
+.menu_text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content_main{
+  margin: 150px 0 0px 0;
+}
+/* ======================================= content ======================================== */
+.content_main{
+  margin-left: 40px;
+}
+/* We are BOTX */
+.botx_header {
+  font-size: 96px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.bot {
+  color: #008ecb;
+}
+
+.botx_text {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: justify;
+  padding: 0 50px 0 58px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.botx_text p {
+  margin-bottom: 0;
+}
+/* ============================================================================================================ */
+
+.wrapper {
+  position: absolute;
+  z-index: 999;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 340px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  background: #ffffff;
+  color: #000000;
+  transition: all 0.3s;
+  box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.5);
+  text-align: center;
+}
+
+.sidebar a {
+  color: #000000;
+}
+
+.sidebar.notActive {
+  right: -500px;
+}
+
+.sidebar.active {
+  right: 0px;
+}
+
+.menu-elements {
+  margin: 48% 0 23%;
+  font-size: 30px;
+  line-height: 45px;
+  width: 100%;
+}
+
+.menu-elements li {
+  width: 100%;
+}
+
+.menu-elements li:hover {
+  font-size: 35px;
+  background-color: #dcdcdc;
+  text-decoration: none;
+}
+
+.contacts {
+  line-height: 25px;
+  margin-bottom: 12%;
+}
+
+.newsletter {
+  margin-bottom: 6%;
+  font-size: 15px;
+  height: 26px;
+}
+
+.newsletter:hover {
+  font-size: 17px;
+  background-color: #dcdcdc;
+  text-decoration: none;
+}
+
+.content {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.dismiss {
+  width: 100px;
+  height: 50px;
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: all 0.3s;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.dismiss a:hover,
+.dismiss a:focus {
+  text-decoration: none;
+}
+
+.socialMedia {
+  margin-bottom: 3%;
+}
+
+.socialMedia i {
+  color: #686868;
+  width: 50px;
+  height: 40px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.socialMedia i:hover {
+  font-size: 35px;
+  vertical-align: middle;
+}
+
+.socialMedia img:hover {
+  transform: scale(1.5);
+  vertical-align: middle;
+}
+
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  line-height: 0;
+}
+
+.privacyTerms {
+  display: inline-flex;
+  font-size: 14px;
+  margin-bottom: 6%;
+}
+
+.privacyTerms a:hover {
+  text-decoration: underline;
+}
+
+.closeImg {
+  transform: scale(0.62);
+}
+
+.contacts img {
+  transform: scale(0.8);
+}
+
+/* ================================================================ Hiring Page =========================================================== */
+
+.hire_position{
+  margin: 60px 0 0px 90px;
+  color: white;
+}
+
+.hire_position h1{
+  font-weight: 600;
+  font-size: 76px;
+}
+
+.hire_position p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.hire {
+  color: #00c908;
+}
+
+.form1{
+  margin-top: 30px;
+  padding: 0;
+}
+
+#login-box input:focus,
+#login-box select:focus {
+  outline: none;
+}
+
+#login-box {
+  position: relative;
+  padding: 15px;
+  /* margin: 50px auto; */
+  width: 380px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+}
+
+#login-box input[type="text"],
+#login-box input[type="email"],
+#login-box input[type="number"],
+#login-box select,
+#login-box input[type="file"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  padding: 4px;
+  width: 250px;
+  height: 32px;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+  background-color: transparent;
+}
+
+/* Chrome, Safari, Edge, Opera */
+#login-box input[type="number"]::-webkit-outer-spin-button,
+#login-box input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#login-box input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#login-box input[type="email"],
+#login-box input[type="number"],
+#login-box select,
+#login-box input[type="file"] {
+  width: 100%;
+}
+
+#login-box input[type="text"]::placeholder,
+#login-box input[type="email"]::placeholder,
+#login-box input[type="number"]::placeholder,
+#login-box select::placeholder,
+#login-box input[type="file"]::placeholder {
+  color: #fff;
+}
+
+#login-box select option {
+  color: #000000;
+  border-radius: 10px;
+  /* background-color: #00C908; */
+  opacity: 0.5;
+}
+
+.btn-success {
+  background-color: #05a60c;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 50%;
+  height: 50px;
+  font-size: 25px;
+  opacity: 0.8;
+}
+
+.col-sm-offset-2{
+  margin-left: 17px;
+  padding: 0;
+}
+
+/* ================================================================ Say Something =========================================================== */
+
+.say_position {
+  margin-left: 90px;
+  color: white;
+}
+
+.say_position h1 {
+  margin-top: 50px;
+  font-weight: 600;
+  font-size: 76px;
+}
+
+.say_span {
+  color: #fca600;
+}
+
+.say_position p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form {
+  margin: 20px 0 0 0;
+}
+
+.name,
+.mail_style,
+.text_area {
+  color: #ffffff;
+  height: 35px;
+  background: linear-gradient(
+      180deg,
+      rgba(235, 235, 224, 0.1) 0%,
+      rgba(245, 245, 240, 0) 100%
+    ),
+    rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: #ffffff solid 1px;
+  width: 120%;
+}
+
+.form-check {
+  margin: 20px 0 0 -13px;
+}
+
+.form-check .form-check-label {
+  vertical-align: top;
+  margin: 0;
+}
+
+#checkboxNews {
+  height: 18px;
+  width: 18px;
+  margin: 0;
+}
+
+.btn-warning {
+  text-align: center;
+  background-color: #fca600;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 50%;
+  height: 50px;
+  font-size: 25px;
+  opacity: 0.8;
+}
+
+/* ================================================= media queries ====================================== */
+
+/* ============================================== home ================================================== */
+@media screen and (max-width: 450px) {
+
+  .img-responsive{
+    width: 100px;
+  }
+  
+  .row-responsive{
+    padding-bottom: 450px;
+  }
+
+  .content_main{
+    margin-left: 0;
+  }
+  .botx_header {
+    font-size: 49px;
+    text-align: left;
+    left: 0;
+    padding: 0;
+    margin: 0px;
+  }
+
+  .botx_text {
+    font-size: 16px;
+    padding: 0 4px 0 0;
+    left: 0;
+    padding: 0 0 50px 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .botx_header{
+    font-size: 40px;
+  }
+}
+
+@media screen and (width: 768px) {
+
+  .img-responsive{
+    width: 100px;
+  }
+  
+  .row-responsive{
+    padding-bottom: 40px;
+  }
+  .botx_header {
+    font-size: 70px;
+    text-align: left;
+  }
+
+  .botx_text {
+    font-size: 15px;
+    padding: 0 214px 0 0;
+  }
+}
+/* =============================================================================================== */
+
+/* ============================================ hiring =========================================== */
+
+@media screen and (width:768px) {
+  .hire_position{
+    margin: 0 0 0 44px;
+  }
+  .btn-success{
+    width: 135px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .hire_position{
+    margin: 125px 0 0 10px;
+    
+  }
+  .hire_position h1{
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width:400px) {
+
+  .hire_position h1{
+    font-size: 50px;
+  }
+
+  .hire_position p{
+    text-align: justify;
+  }
+
+  #login-box{
+    width: 320px;
+    margin-left: 4px;
+  }
+
+}
+@media screen and (max-width:320px) {
+  .hire_position{
+    margin: 143px 0 0 0px;
+  }
+  .hire_position p {
+    text-align: justify;
+    width: 263px;
+    margin: 10px;
+  }
+  .row h1{
+    font-size: 40px;
+    text-align: center;
+  }
+  #login-box{
+    width: 276px;
+    margin-left: 8px;
+  }
+  .btn-success{
+    margin-left: 8px;
+  }
+  
+}
+
+/* ================================================================================================================= */
+
+/* =========================================== say something =============================================== */
+
+@media screen and (max-width: 768px) {
+  .say_position{
+  margin-left: 50px;
+  }
+  .say_position h1{
+    font-size: 65px;
+    margin-top: 26px;
+  }
+  .say_position p{
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width:450px) {
+ 
+}
+
+@media screen and (max-width:400px) {
+  
+}
+
+@media screen and (max-width:320px) {
+  
+}
